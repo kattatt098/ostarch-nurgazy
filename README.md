@@ -1,51 +1,37 @@
-# lab 0
-ProductName:		macOS
-ProductVersion:		15.2
-BuildVersion:		24C101
-Memory: 8 GB
-      Type: LPDDR4
-      Manufacturer: Hynix
-      Device Identifier:         disk0
-   Device Node:               /dev/disk0
-   Whole:                     Yes
-   Part of Whole:             disk0
-   Device / Media Name:       APPLE SSD AP0256Q
+# Mac System Specifications
 
-   Volume Name:               Not applicable (no file system)
-   Mounted:                   Not applicable (no file system)
-   File System:               None
+## Core Specifications
 
-   Content (IOContent):       GUID_partition_scheme
-   OS Can Be Installed:       No
-   Media Type:                Общий
-   Protocol:                  Apple Fabric
-   SMART Status:              Verified
+| Parameter | Value |
+| :--- | :--- |
+| **Model** | MacBook Air (M1, 2020) |
+| **Model Identifier** | MacBookAir10,1 (MGN63RU/A) |
+| **Processor (Chip)** | Apple M1 (8 cores: 4 performance + 4 efficiency) |
+| **RAM** | 8 GB LPDDR4 (Hynix) |
+| **Storage** | APPLE SSD AP0256Q (251 GB) |
+| **Operating System** | macOS 15.2 (Build 24C101) |
+| **Serial Number** | HXJPNAH61WFV |
+| **Hardware UUID** | 23A1B14A-6FB2-57AD-AC76-9C0B13A77E20 |
+| **Virtualization Support** | Enabled (`kern.hv_support: 1`) |
 
-   Disk Size:                 251.0 GB (251000193024 Bytes) (exactly 490234752 512-Byte-Units)
-   Device Block Size:         4096 Bytes
+---
 
-   Media OS Use Only:         No
-   Media Read-Only:           No
-   Volume Read-Only:          Not applicable (no file system)
+## Processor & Architecture Details
 
-   Device Location:           Internal
-   Removable Media:           Fixed
+| Property | Value |
+| :--- | :--- |
+| **Total Cores** | 8 |
+| **Performance Cores** | 4 (L1 Cache: 192 KB, L2 Cache: 12 MB) |
+| **Efficiency Cores** | 4 (L1 Cache: 128 KB, L2 Cache: 4 MB) |
+| **Architecture** | ARM64 (64-bit) |
+| **Page Size** | 16 KB |
 
-   Solid State:               Yes
-   Hardware AES Support:      Yes
-    Hardware Overview:
+---
 
-      Model Name: MacBook Air
-      Model Identifier: MacBookAir10,1
-      Model Number: MGN63RU/A
-      Chip: Apple M1
-      Total Number of Cores: 8 (4 performance and 4 efficiency)
-      Memory: 8 GB
-      System Firmware Version: 11881.61.3
-      OS Loader Version: 11881.61.3
-      Serial Number (system): HXJPNAH61WFV
-      Hardware UUID: 23A1B14A-6FB2-57AD-AC76-9C0B13A77E20
-      Provisioning UDID: 00008103-001E056E3C53A01E
-      Activation Lock Status: Enabled
+## System & Storage Status
 
-kern.hv_support: 1
+| Component | Status / Value |
+| :--- | :--- |
+| **SSD SMART Status** | Verified |
+| **Hardware AES Encryption** | Supported |
+| **Activation Lock** | Enabled |
