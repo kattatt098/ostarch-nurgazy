@@ -1,0 +1,48 @@
+Lab 2: Windows VM and Network
+1. Windows 11 Virtual Machine
+	•	Hypervisor: UTM
+	•	Operating System: Windows 11 Enterprise Evaluation
+	•	Host: MacBook Apple M1
+	•	Host RAM: 8 GB
+	•	CPU: 2 cores
+	•	Windows VM RAM: 4 GB
+	•	Virtual Disk: 64 GB
+2. Network Configuration
+	•	Network mode: [WRITE YOUR NETWORK MODE]
+	•	Ubuntu IP address: [WRITE YOUR IP]
+	•	Windows IP address: [WRITE YOUR IP]
+Network Diagram
+                 Internet
+                    |
+                Mac Host
+                    |
+             Virtual Network
+                /       \
+           Ubuntu VM   Windows 11 VM
+3. Connectivity Testing
+	•	Windows to Ubuntu: [WRITE YOUR RESULT]
+	•	Ubuntu to Windows: [WRITE YOUR RESULT]
+	•	Internet connectivity: [WRITE YOUR RESULT]
+4. Windows Firewall
+Windows Defender Firewall blocks incoming ping requests by default.
+A specific ICMPv4 Echo Request rule was added to allow ping from the local subnet.
+	•	Protocol: ICMPv4
+	•	Direction: Inbound
+	•	ICMP Type: 8
+	•	Remote Address: LocalSubnet
+	•	Action: Allow
+5. Memory Overcommitment Experiment
+Before Experiment
+	•	Host RAM: 8 GB
+	•	Memory Pressure: [WRITE YOUR RESULT]
+	•	Swap Used: [WRITE YOUR RESULT]
+During Experiment
+	•	Ubuntu VM memory: [WRITE YOUR VALUE]
+	•	Windows VM memory: [WRITE YOUR VALUE]
+	•	Total allocated memory: [WRITE YOUR VALUE]
+After Experiment
+	•	Memory Pressure: [WRITE YOUR RESULT]
+	•	Swap Used: [WRITE YOUR RESULT]
+	•	Host performance: [DESCRIBE WHAT HAPPENED]
+6. Conclusion
+In this lab, I installed Windows 11 in UTM and prepared a second virtual machine alongside Ubuntu. I explored virtual networking, firewall configuration, and memory overcommitment. The experiment helped me understand how virtual machines share the host computer's resources.
