@@ -1,5 +1,0 @@
-Ubuntu to Windows:
-4 packets transmitted, 4 received, 0% packet loss.
-
-Windows to Ubuntu:
-Sent = 4, Received = 4, Lost = 0 (0% loss).
