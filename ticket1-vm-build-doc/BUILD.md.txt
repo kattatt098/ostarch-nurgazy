@@ -1,0 +1,55 @@
+Build Guide – Linux and Windows Virtual Machines
+1. Requirements
+Before starting, prepare:
+A Mac with an Apple Silicon processor.
+UTM 5.0.8.
+Ubuntu Server 24.04 ARM64 ISO.
+Windows 11 installation image compatible with ARM64.
+Enough free disk space for both virtual machines.
+2. Create the Ubuntu Virtual Machine
+1.Open UTM and click Create a New Virtual Machine.
+2.Select Virtualize.
+3.Select Linux.
+4.Set the memory to 2048 MB.
+5.Set the CPU cores to 2.
+6.Keep the default display settings.
+7.Select the Ubuntu Server ARM64 ISO file.
+8.Set the virtual disk size to 25 GB.
+9.Leave the shared directory empty.
+10.Save the virtual machine and start it.
+11.Follow the Ubuntu installation instructions.
+12.Create a username and password.
+13.Complete the installation and restart the VM.
+The ARM64 image is required because the host computer uses an Apple Silicon processor.
+3. Create the Windows Virtual Machine
+1.Open UTM.
+2.Create a new virtual machine.
+3.Select Virtualize and then Windows.
+4.Select a compatible Windows 11 ARM64 installation image.
+5.Allocate 4096 MB of RAM.
+6.Allocate 2 CPU cores.
+7.Set the virtual disk size to 80 GB.
+8.Select Shared Network.
+9.Save the configuration and start the VM.
+10.Follow the Windows installation instructions.
+4. Configure the Network
+Both virtual machines use Shared Network in UTM.
+To check the Ubuntu IP address, open the terminal and run:
+ip -br addr
+To check the Windows IP address, open Command Prompt and run:
+ipconfig
+To test communication from Ubuntu to Windows:
+ping -c 4 WINDOWS_IP_ADDRESS
+To test communication from Windows to Ubuntu:
+ping -n 4 UBUNTU_IP_ADDRESS
+If Windows Firewall blocks incoming ping requests, open Command Prompt as administrator and run:
+netsh advfirewall firewall add rule name="Allow Ping IPv4" protocol=icmpv4:8,any dir=in action=allow
+Repeat the ping tests to confirm that both machines can communicate.
+5. Create a Snapshot
+After completing the installation and configuration, create a snapshot of each virtual machine.
+Use a clear name, for example:
+clean-install
+A snapshot allows you to return to a previous working state if something goes wrong.
+6. Final Verification
+Before using the virtual machines, check that:
+Ubuntu starts successfully.
