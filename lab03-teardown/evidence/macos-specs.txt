@@ -1,0 +1,68 @@
+LAB 03 — macOS Hardware Information
+
+Operating System:
+macOS 15.2
+Build: 24C101
+
+Device:
+Model Name: MacBook Air
+Model Identifier: MacBookAir10,1
+Model Number: MGN63RU/A
+
+CPU:
+Apple M1
+Physical CPUs: 8
+Logical CPUs: 8
+Total cores: 8 (4 performance + 4 efficiency)
+
+Memory:
+Total: 8 GB
+Type: LPDDR4
+Manufacturer: Hynix
+hw.memsize: 8589934592 bytes
+
+Storage:
+Device: APPLE SSD AP0256Q
+Size: 251.0 GB (nominal 256 GB)
+Protocol: Apple Fabric
+Solid State: Yes
+Location: Internal
+SMART Status: Verified
+
+Motherboard:
+Apple M1-based logic board.
+A separate motherboard model was not reported by system_profiler.
+
+Commands used:
+system_profiler SPHardwareDataType
+system_profiler SPMemoryDataType
+sysctl hw.memsize
+sysctl -n machdep.cpu.brand_string
+sysctl hw.physicalcpu hw.logicalcpu
+diskutil info disk0
+sw_vers
+
+Privacy:
+Serial Number, Hardware UUID and Provisioning UDID intentionally excluded.
+
+Additional Storage Information:
+Command: system_profiler SPStorageDataType
+Device Name: APPLE SSD AP0256Q
+Media Name: AppleAPFSMedia
+Medium Type: SSD
+Protocol: Apple Fabric
+Internal: Yes
+File System: APFS
+Volume Capacity: 245.11 GB
+Free Space: 60.47 GB
+SMART Status: Verified
+
+Additional Storage Verification:
+Command: system_profiler SPStorageDataType
+Physical Drive: APPLE SSD AP0256Q
+Medium Type: SSD
+Protocol: Apple Fabric
+Internal: Yes
+APFS Capacity: 245.11 GB
+Available Space: 60.47 GB
+S.M.A.R.T. Status: Verified

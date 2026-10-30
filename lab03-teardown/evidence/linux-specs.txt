@@ -1,0 +1,107 @@
+
+LAB 03 — Ubuntu Virtual Machine Evidence
+
+1. Operating System
+
+Command:
+```bash
+lsb_release -a
+```
+
+Recorded results:
+- Description: Ubuntu 24.04.5 LTS
+- Release: 24.04
+- Codename: noble
+
+2. CPU Information
+
+Command:
+```bash
+lscpu
+```
+
+Recorded results:
+- Architecture: aarch64
+- CPU(s): 2
+- Vendor ID: Apple
+- Virtual CPUs assigned to the VM: 2
+
+3. Memory Information
+
+Command:
+```bash
+free -h
+```
+
+Recorded results:
+- Total: approximately 1.9 GiB
+- Used: approximately 264 MiB
+- Free: approximately 1.5 GiB
+- Available: approximately 1.7 GiB
+- Swap: 2.0 GiB
+
+Command:
+```bash
+sudo dmidecode -t memory
+```
+
+Recorded results:
+- Maximum Capacity: 2 GB
+- Number Of Devices: 1
+- Installed Memory: 2 GB
+- Form Factor: DIMM
+- Type: DRAM
+- Speed: Unknown
+- Manufacturer: Not Specified
+- Configured Memory Speed: Unknown
+
+4. Storage Information
+
+Command:
+```bash
+lsblk -o NAME,SIZE,TYPE,MODEL
+```
+
+Recorded results:
+- Main virtual disk: /dev/vda
+- Main virtual disk size: 25 GiB
+- Additional device: /dev/sda
+- Additional device size: approximately 3.56 GiB
+- Additional device model: Virtual Disk
+
+Command:
+```bash
+sudo fdisk -l
+```
+
+Recorded results:
+- Main virtual disk: /dev/vda
+- Partition table: GPT
+- Sector size: 512 bytes
+
+5. Motherboard Information
+
+Command:
+```bash
+sudo dmidecode -t baseboard
+```
+
+Recorded results:
+- SMBIOS version: 3.3.0
+- No populated baseboard model information reported.
+
+6. Virtualization Information
+
+Command:
+```bash
+systemd-detect-virt
+```
+
+Recorded result:
+- apple
+
+7. Notes
+
+These specifications describe the Ubuntu virtual machine running in VirtualBox. They do not represent the physical hardware specifications of the MacBook Air host.
+
+Some hardware details, including the exact CPU model, disk interface, and motherboard model, are not reported by the available virtual machine information.
