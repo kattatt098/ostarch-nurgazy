@@ -1,0 +1,24 @@
+Peer Review – Ticket 1
+
+Reviewer: Khanshaiym Nurtaza  
+Date: November 3, 2026  
+
+ 1. What I reviewed
+
+I thoroughly reviewed the `BUILD.md` document and evaluated the virtual machine deployment instructions provided in the repository. I checked the allocated hardware specifications (RAM boundaries, virtual CPU cores, and dynamic disk provisioning), the system verification commands, and the network setup for internet connectivity and guest interactions.
+
+2. First point where I got stuck
+
+I did not experience any failure points or get stuck during the execution. Every step in `BUILD.md` was presented in a logical sequence, terminal commands were formatted correctly in code blocks, and the step-by-step instructions could be followed literally from start to finish without making extra technical assumptions.
+
+ 3. Suggested correction
+
+No major technical corrections are required. The key architectural choices—such as selecting NAT networking to work with campus network MAC filtering and using dynamic disk allocation to save host storage space—were well explained. As a minor suggestion for future builds, adding quick visual indicators or bullet points under the screenshots would make navigation even smoother for complete beginners.
+
+ 4. Final feedback
+
+Overall, the submission is exceptionally well-structured and fully complies with all requirements for Ticket 1. The documentation bridges the gap left by the original non-technical support request by establishing clear hardware boundaries and giving non-technical staff an easy-to-follow guide.
+
+The `BUILD.md` document is clear, complete, and provides clear reasons for each non-default configuration choice. 
+
+Additionally, the evidence files in `evidence/` effectively support all claims made in the build document, providing clear proof for kernel status (`uname -a`) and outbound network connectivity (`ping`). The submission demonstrates high quality, and I recommend accepting the work without any major changes.
