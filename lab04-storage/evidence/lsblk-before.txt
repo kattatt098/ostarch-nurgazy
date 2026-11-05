@@ -1,0 +1,12 @@
+NAME                       SIZE TYPE FSTYPE      MOUNTPOINT
+sda                        3.6G disk iso9660     
+├─sda1                     3.6G part iso9660     
+└─sda2                     7.1M part vfat        
+vda                         25G disk             
+├─vda1                       1G part vfat        /boot/efi
+├─vda2                       2G part ext4        /boot
+└─vda3                    21.9G part LVM2_member 
+  └─ubuntu--vg-ubuntu--lv   11G lvm  ext4        /
+vdb                          2G disk             
+vdc                          2G disk             
+vdd                          2G disk             
