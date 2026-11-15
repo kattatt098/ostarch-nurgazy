@@ -1,6 +1,6 @@
  Vendor quotes
 
-One screenshot per priced page, taken on 14 November 2026. Show the product name, the price, the shop and (best) the date and time in one frame; 
+
 
 | # | File name | budget.csv rows | Shop, price | Page |
 |---|---|---|---|---|
@@ -18,4 +18,3 @@ One screenshot per priced page, taken on 14 November 2026. Show the product name
 | 12 | `row37-monitor-proart-pa278cv.png` | 37 | Satu.kz seller, 219,000 | https://satu.kz/Monitor-asus-proart.html |
 | 13 | `q2-hp-99q40et-satu.png` | Question 2 | Satu.kz seller, 774,928 | https://satu.kz/Hp-pro-tower.html (row: HP Pro Tower 400 G9 ... 1TB ... W11P ... 99Q40ET) |
 
-If a price on the page differs from budget.csv, fix budget.csv, builds.md and README.md together.
