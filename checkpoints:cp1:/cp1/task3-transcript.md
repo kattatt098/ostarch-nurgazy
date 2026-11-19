@@ -105,7 +105,7 @@ Expected result:
 - Timer is active.
 - The next execution is scheduled approximately two minutes after the previous activation.
 
-**Step 5: Verify after reboot**
+Step 5: Verify after reboot**
 
 First, reboot the server during an approved maintenance window:
 
