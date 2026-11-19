@@ -29,7 +29,7 @@ My guests (from my build log): Ubuntu Server 2 vCPU, 2 GB RAM, 25 GB disk; Windo
 
 Assumption for the host: at least 2 threads, 3 GB RAM and 20 GB disk for the system and updates. Other reasons: Windows 11 itself needs at least 4 GB, the disk is slow eMMC, Windows 11 Home in S mode cannot install a hypervisor, and my guests are ARM64 images while the laptop is x86-64.
 
-Answer: no, it cannot run both guests at these sizes.**
+Answer: no, it cannot run both guests at these sizes.
 
 2. What would I upgrade first?
 
