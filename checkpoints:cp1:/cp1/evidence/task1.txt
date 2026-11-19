@@ -8,11 +8,11 @@ kern.hv_support: 1
 Memory
 hw.memsize: 8589934592
 Mach Virtual Memory Statistics: (page size of 16384 bytes)
-Pages free:                                4086.
-Pages active:                             85446.
-Pages inactive:                           77599.
-Pages speculative:                         7244.
-Pages throttled:                              0.
+Pages free:4086.
+Pages active:85446.
+Pages inactive:77599.
+Pages speculative:7244.
+Pages throttled:0.
 System disk
 Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
 /dev/disk3s1s1   228Gi    10Gi    63Gi    15%    412k  664M    0%   /
@@ -22,7 +22,7 @@ Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
 Partition style
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *251.0 GB   disk0
+   0:      GUID_partition_scheme                         251.0 GB   disk0
    1:             Apple_APFS_ISC Container disk1         524.3 MB   disk0s1
    2:                 Apple_APFS Container disk3         245.1 GB   disk0s2
    3:        Apple_APFS_Recovery Container disk2         5.4 GB     disk0s3
