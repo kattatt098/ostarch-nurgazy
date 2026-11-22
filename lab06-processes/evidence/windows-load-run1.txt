@@ -1,0 +1,33 @@
+Start: Sunday, November 22, 2026 3:32:48 PM
+PS> (loop: allocate byte[] 100MB chunks, stop at 2500 MB or free commit < 150 MB, then hold 90 s)
+
+100 MB allocated, free commit 951 MB
+200 MB allocated, free commit 854 MB
+300 MB allocated, free commit 755 MB
+400 MB allocated, free commit 651 MB
+500 MB allocated, free commit 552 MB
+600 MB allocated, free commit 452 MB
+700 MB allocated, free commit 352 MB
+800 MB allocated, free commit 740 MB
+900 MB allocated, free commit 638 MB
+1000 MB allocated, free commit 536 MB
+1100 MB allocated, free commit 434 MB
+1200 MB allocated, free commit 335 MB
+1300 MB allocated, free commit 788 MB
+1400 MB allocated, free commit 684 MB
+1500 MB allocated, free commit 584 MB
+1600 MB allocated, free commit 475 MB
+1700 MB allocated, free commit 373 MB
+1800 MB allocated, free commit 270 MB
+1900 MB allocated, free commit 771 MB
+2000 MB allocated, free commit 669 MB
+2100 MB allocated, free commit 564 MB
+2200 MB allocated, free commit 464 MB
+2300 MB allocated, free commit 360 MB
+2400 MB allocated, free commit 257 MB
+2500 MB allocated, free commit 815 MB
+holding 90 s
+
+PS> Get-WinEvent -FilterHashtable @{LogName='System'; ProviderName='Microsoft-Windows-Resource-Exhaustion-Detector'} -MaxEvents 5
+Get-WinEvent : No events were found that match the specified selection criteria.
+(NoMatchingEventsFound)

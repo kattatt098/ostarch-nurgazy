@@ -1,0 +1,13 @@
+$ ps -o pid,ppid,rss,cmd -C ping
+    PID    PPID   RSS CMD
+  23585    1554  2404 ping 127.0.0.1
+open fds:
+5
+
+# Glossary
+# PID  - process ID, the number the kernel gives to this running process
+# PPID - parent PID, the process that started it (1554 = the shell session)
+# RSS  - resident set size, KB of RAM the process holds right now (2404 KB)
+# CMD  - the command line that was run
+# fds  - open file descriptors (files and sockets) in /proc/23585/fd; counted with sudo
+#        because ping runs with elevated privileges

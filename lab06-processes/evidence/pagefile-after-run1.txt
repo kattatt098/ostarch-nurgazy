@@ -1,0 +1,15 @@
+Before the run (initial numbers): pagefile C:\pagefile.sys 728 MB (267 MB used);
+virtual memory limit 4931208 KB, free 1093236 KB.
+
+After the run:
+PS> Get-CimInstance Win32_PageFileUsage | Select-Object Name, AllocatedBaseSize, PeakUsage
+
+Name            AllocatedBaseSize PeakUsage
+----            ----------------- ---------
+C:\pagefile.sys              3756       386
+
+PS> Get-CimInstance Win32_OperatingSystem | Select-Object TotalVirtualMemorySize, FreeVirtualMemory
+
+TotalVirtualMemorySize FreeVirtualMemory
+---------------------- -----------------
+               8031292           1603836

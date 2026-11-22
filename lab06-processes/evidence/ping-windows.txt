@@ -1,0 +1,9 @@
+PS> Start-Process ping -ArgumentList '-t','127.0.0.1'
+PS> Get-CimInstance Win32_Process -Filter "Name='PING.EXE'" | Select-Object ProcessId, ParentProcessId, WorkingSetSize
+
+ProcessId ParentProcessId WorkingSetSize
+--------- --------------- --------------
+    10304            9960        7749632
+
+PS> (Get-Process ping).HandleCount
+82
