@@ -90,14 +90,4 @@ because Windows never ran out of memory: the page file grew instead of the alloc
   is system-managed and grew from 728 MB to 3756 MB. To force the event, the page file would have to be fixed
   at 728 MB first (not done).
 
-## Evidence
 
-- [evidence/task-manager.png](evidence/task-manager.png) — ping in Task Manager (Details tab)
-- [evidence/process-explorer.png](evidence/process-explorer.png) — the same ping in Process Explorer
-- [evidence/htop.png](evidence/htop.png) — ping in htop on Linux
-- [evidence/ping-windows.txt](evidence/ping-windows.txt) — PID, parent, working set, handles on Windows
-- [evidence/ping-linux.txt](evidence/ping-linux.txt) — PID, parent, RSS, descriptors on Linux
-- [evidence/memory-pressure.txt](evidence/memory-pressure.txt) — memory before, during, after on Linux
-- [evidence/kernel-log-extract.txt](evidence/kernel-log-extract.txt) — oom-killer records from the kernel log
-- [evidence/windows-load-run1.txt](evidence/windows-load-run1.txt) — output of the Windows allocation loop
-- [evidence/pagefile-after-run1.txt](evidence/pagefile-after-run1.txt) — page file size and virtual memory after the Windows run
